@@ -125,13 +125,13 @@ FROM employees
 WHERE department = (SELECT department FROM employees WHERE name = 'Bob');
 ```
 
-## Employees with a salary greater than the average salary in their department
+## Find Employees Who Earn More Than the Second Lowest Salary
 ``` sql
 SELECT name, department, salary 
-FROM employees e1
-WHERE salary > (SELECT AVG(salary) 
-                FROM employees e2 
-                WHERE e1.department = e2.department);
+FROM employees 
+WHERE salary > (SELECT MIN(salary) 
+                FROM employees 
+                WHERE salary > (SELECT MIN(salary) FROM employees));
 ```
 
 
