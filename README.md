@@ -8,7 +8,7 @@ CREATE TABLE employees (
     department VARCHAR(50),
     salary INT
 );
-
+```
 ## Insert sample values into employees table
 INSERT INTO employees (employee_id, name, department, salary) VALUES 
 (1, 'Alice', 'HR', 50000),
