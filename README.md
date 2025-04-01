@@ -10,6 +10,7 @@ CREATE TABLE employees (
     salary INT
 );
 
+```sql
 Insert Sample Values into Employees Table
 
 INSERT INTO employees (employee_id, name, department, salary) VALUES 
