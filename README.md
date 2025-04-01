@@ -1,7 +1,7 @@
 # DBMS-EP3-SQL
 
 ## Table: employees
-
+```sql
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     name VARCHAR(50),
